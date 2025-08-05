@@ -23,7 +23,7 @@ const AboutSection = () => {
   { id: 'email',     iconitem: <Email style={{color:'rgba(255, 202, 34, 1)'}}/>,     details: 'yeripillipraveenprakash@gmail.com' },
   { id: 'facebook',  iconitem: <Facebook style={{color:'rgba(255, 202, 34, 1)'}}/>,  details: '' },
   { id: 'linkedin',  iconitem: <LinkedIn style={{color:'rgba(255, 202, 34, 1)'}}/>,  details: 'cantact' },
-  { id: 'github',    iconitem: <GitHub style={{color:'rgba(255, 202, 34, 1)'}}/>,    details: 'cantact' }
+  { id: 'github',    iconitem: <GitHub style={{color:'rgba(255, 202, 34, 1)'}}/>,    details: 'github' }
   ];
   const textid = hoverid ||activateId || detailitems[autohoverindex].id;
   const detailstext = detailitems.find(item => item.id === textid)?.details || '';
