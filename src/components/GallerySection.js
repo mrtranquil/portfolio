@@ -16,6 +16,8 @@ const GallerySection = () => {
   };
   return (
     <div>
+      <div></div>
+     
       <div  className='w-100 h-100  align-items-center justify-content-center ' style={{ position: 'fixed',zIndex:'1000',top:'0px',backgroundColor:'rgba(47, 47, 47, 0.62)',display:fullimg }}>
        
         <div className='d-flex  justify-content-center h-100 px-5   position-relative'>
