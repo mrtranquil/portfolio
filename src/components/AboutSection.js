@@ -51,7 +51,7 @@ const AboutSection = () => {
         </div>
           <div className='p-lg-3 px-4  pt-lg-5'>
             <h2 className='mb-4 ms-1' style={{textShadow:' 2px 2px 5px rgba(15, 12, 0, 1)' ,color:'rgba(255, 202, 34, 1)'}}>Hi, I am</h2>
-            <h1 className='text-white mb-0 nametitle ' style={{ textShadow:' 2px 2px 5px rgba(0, 0, 0, 1)' }}>PRAVEEN PRAKASH</h1>
+            <h1 className='text-white mb-0 nametitle d-flex justify-content-center ' style={{ textShadow:' 2px 2px 5px rgba(0, 0, 0, 1)' }}>PRAVEEN PRAKASH</h1>
            
             <div className='d-flex justify-content-center mt-3' >
               <h3 className='text-white py-3 py-lg-0'>WEB DEVELOPER..</h3>
