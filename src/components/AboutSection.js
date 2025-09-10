@@ -49,7 +49,7 @@ const AboutSection = () => {
         <div className=' d-flex justify-content-center justify-content-md-start   col-12   align-items-center' style={{height:'440px'}}>
         <div className='col-md-2' >
         </div>
-          <div className='p-lg-3  pt-lg-5'>
+          <div className='p-lg-3 px-4  pt-lg-5'>
             <h2 className='mb-4 ms-1' style={{textShadow:' 2px 2px 5px rgba(15, 12, 0, 1)' ,color:'rgba(255, 202, 34, 1)'}}>Hi, I am</h2>
             <h1 className='text-white mb-0 nametitle ' style={{ textShadow:' 2px 2px 5px rgba(0, 0, 0, 1)' }}>PRAVEEN PRAKASH</h1>
            
