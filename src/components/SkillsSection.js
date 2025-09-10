@@ -50,8 +50,8 @@ const databases = [{id:'sql',icon:Sql,caption:'Sql',roundedlevel:l9}];
     return(
       
         <div className='col-12 py-5   bg-white d-flex justify-content-center'>
-            <div className=' col-8 '>
-                <div className='d-flex  align-items-center mt-3 '>
+            <div className=' col-lg-8 col-10'>
+                <div className='d-flex  align-items-center mt-3 pt-4 pt-lg-none  '>
                         <div style={{height:'70px',width:'4px',backgroundColor:'rgba(8, 67, 59, 1) '}}></div>
                     <h1 className='ms-3 text-success'>SKILLS</h1>
                    
@@ -69,10 +69,10 @@ const databases = [{id:'sql',icon:Sql,caption:'Sql',roundedlevel:l9}];
 
             <div className='d-flex'>
                 
-                <div className=' d-flex flex-wrap justify-content-center py-4'>
+                <div className=' d-flex overflow-auto   py-4 '  >
                     {
                 frontend.map((item) => (
-                    <div key={item.id} className='position-relative ' style={{ width: '140px' }}>
+                    <div key={item.id} className='position-relative ' style={{ minWidth: '140px' }}>
                         <div><img  style={{width:'100px',height:'100px'}} src={item.roundedlevel}></img></div>
                         
                         <div className='d-flex justify-content-center align-items-center h-100' style={{
@@ -96,10 +96,10 @@ const databases = [{id:'sql',icon:Sql,caption:'Sql',roundedlevel:l9}];
 
             <div className='d-flex'>
                 
-                <div className=' d-flex flex-wrap justify-content-center py-4'>
+                <div className=' d-flex   overflow-auto py-4'>
                     {
                 programming.map((item) => (
-                    <div key={item.id} className='position-relative ' style={{ width: '140px' }}>
+                    <div key={item.id} className='position-relative ' style={{ minWidth: '140px' }}>
                         <div><img  style={{width:'100px',height:'100px'}} src={item.roundedlevel}></img></div>
                         
                         <div className='d-flex justify-content-center align-items-center h-100' style={{
@@ -122,10 +122,10 @@ const databases = [{id:'sql',icon:Sql,caption:'Sql',roundedlevel:l9}];
 
              <div className='d-flex'>
                 
-                <div className=' d-flex flex-wrap justify-content-center py-4'>
+                <div className=' d-flex   overflow-auto py-4'>
                     {
                 backend.map((item) => (
-                    <div key={item.id} className='position-relative ' style={{ width: '140px' }}>
+                    <div key={item.id} className='position-relative ' style={{ minWidth: '140px' }}>
                         <div><img  style={{width:'100px',height:'100px'}} src={item.roundedlevel}></img></div>
                         
                         <div className='d-flex justify-content-center align-items-center h-100' style={{
@@ -150,7 +150,7 @@ const databases = [{id:'sql',icon:Sql,caption:'Sql',roundedlevel:l9}];
 
             <div className='d-flex'>
                 
-                <div className=' d-flex flex-wrap justify-content-center py-4'>
+                <div className=' d-flex  overflow-auto py-4'>
                     {
                 databases.map((item) => (
                     <div key={item.id} className='position-relative ' style={{ width: '100px' }}>
@@ -177,7 +177,7 @@ const databases = [{id:'sql',icon:Sql,caption:'Sql',roundedlevel:l9}];
             
             <div className='d-flex'>
                 
-                <div className=' d-flex flex-wrap justify-content-center pt-4'>
+                <div className=' d-flex  overflow-auto pt-4'>
                     {
                 tools.map((item) => (
                     <div key={item.id} className='position-relative ' style={{ width: '100px' }}>

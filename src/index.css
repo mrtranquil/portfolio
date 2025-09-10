@@ -30,3 +30,27 @@ background-color: rgba(8, 67, 59, 1)  !important;
 /* .left-section-box:hover{
     box-shadow: 0 4px 8px 0 rgb(0, 245, 118); 
 } */
+
+.overflow-auto::-webkit-scrollbar {
+  display: none;                  /* Chrome, Safari, Opera */
+}
+
+.nametitle{
+        font-size: 50px ;
+    }
+
+
+@media only screen and (max-width:500px){
+ 
+    .nametitle{
+        font-size: 40px !important;
+    }
+    
+}
+@media only screen and (min-width:750px){
+ 
+    .hidedprogress{
+        padding-top: 60px !important;
+    }
+    
+}

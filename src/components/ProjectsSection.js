@@ -10,16 +10,16 @@ const ProjectsSection = () => {
   return (
     <div>
           <div className='d-flex justify-content-center bg-white'>
-              <div className='col-8'>
+              <div className=' col-lg-8 col-10'>
                    <div className='d-flex  align-items-center mt-4  '>
                         <div style={{height:'70px',width:'4px',backgroundColor:'rgba(8, 67, 59, 1) '}}></div>
                       <h1 className='ms-3 text-success'>PROJECTS</h1>
                          
                   </div>
                   <hr className='mb-4 text-secondary'></hr>
-                  <div className='d-flex mb-4'>
+                  <div className='d-flex mb-4 overflow-auto'>
                       {projects.map((project) => (
-                          <div className='col-6 p-3'>
+                          <div className='col-12 col-md-6 p-3'>
                           <div className='border border-secondary rounded-3 position-relative'>
                                   <img className='col-12 rounded-top-3'  src={project.thumbnail}></img>
                                   <div className='d-flex p-3 justify-content-end col-12' style={{ position: 'absolute', top: '0px' }}>
@@ -55,7 +55,8 @@ const ProjectsSection = () => {
                                   </div>
                               
                               </div>
-                               </div>
+                          </div>
+                          
                       ))}
                           
                           

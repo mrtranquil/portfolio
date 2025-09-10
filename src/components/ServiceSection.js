@@ -31,7 +31,7 @@ const ServiceSection = () => {
   return (
       <div>
            <div className='d-flex justify-content-center bg-white'>
-              <div className='col-8'>
+              <div className='col-lg-8 col-11'>
                    <div className='d-flex  align-items-center mt-4  '>
                         <div style={{height:'70px',width:'4px',backgroundColor:'rgba(8, 67, 59, 1) '}}></div>
                       <h1 className='ms-3 text-success'>MY SERVICES</h1>
@@ -39,9 +39,9 @@ const ServiceSection = () => {
                   </div>
                   <hr className='mb-4 text-secondary'></hr>
 
-                  <div className='d-flex mb-2'>
+                  <div className='d-flex mb-2 overflow-auto'>
                       {services.map((service) => (
-                          <div className='col-4 p-3'>
+                          <div className='col-10 col-sm-6 col-md-4 p-3'>
                           <div className='border border-secondary rounded-3 position-relative h-100'>
                                   <div style={{aspectRatio:'2/1',overflow:'hidden',position:'relative'}}>
                                       <img className=' rounded-top-3 w-100 ' style={{ objectFit: 'cover' }} src={service.thumbnail}></img>

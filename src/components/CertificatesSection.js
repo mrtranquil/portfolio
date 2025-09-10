@@ -13,16 +13,16 @@ const CertificatesSection = () => {
   return (
       <div>
           <div className='d-flex justify-content-center bg-white pt-3'>
-              <div className='col-8'>
+              <div className='col-lg-8 col-11'>
                    <div className='d-flex  align-items-center  '>
                         <div style={{height:'70px',width:'4px',backgroundColor:'rgba(8, 67, 59, 1) '}}></div>
                       <h1 className='ms-3 text-success'>CERTIFICATES</h1>
                          
                   </div>
                   <hr className='mb-4 text-secondary'></hr>
-                  <div className='d-flex mb-5'>
+                  <div className='d-flex mb-5 overflow-auto'>
                       {Certificates.map((certificate) => (
-                          <div className='col-4 p-3'>
+                          <div className='col-10 col-sm-6 col-lg-4 p-3'>
                           <div className='border border-secondary rounded-3 position-relative h-100'>
                                   <div style={{aspectRatio:'2/1',overflow:'hidden',position:'relative'}}>
                                       <img className=' rounded-top-3 w-100 ' style={{ objectFit: 'cover' }} src={certificate.thumbnail}></img>

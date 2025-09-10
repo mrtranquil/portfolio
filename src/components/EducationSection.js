@@ -41,18 +41,18 @@ const EducationSection = () => {
   return (
     <div>
       <div className='d-flex justify-content-center bg-white pt-5 pb-5'>
-              <div className='col-8'>
+              <div className='col-lg-8 col-11'>
                    <div className='d-flex  align-items-center  '>
                         <div style={{height:'70px',width:'4px',backgroundColor:'rgba(8, 67, 59, 1) '}}></div>
                       <h1 className='ms-3 text-success'>EDUCATION</h1>
                          
                   </div>
                   <hr className='mb-5 pb-3 text-secondary'></hr>
-                  <div style={{position:'relative',paddingTop:'60px'}} className=' col-12 '>
-                      <ProgressBar now={55}/>
-                       <div style={{position:'absolute',top:'0px',zIndex:'2'}} className=' col-12 d-flex justify-content-evenly align-items-center'>
+                  <div style={{position:'relative'}} className='hidedprogress col-12 overflow-auto '>
+                      <ProgressBar className='d-none d-md-flex'  now={55}/>
+                       <div style={{position:'absolute',top:'0px',zIndex:'2'}} className=' d-none d-md-flex col-12  justify-content-evenly align-items-center'>
                       <div className='d-flex justify-content-center col-4'>
-                              <div className='col-12'>
+                              <div className='col-12 overflow-auto'>
                                   <div className='d-flex justify-content-center'><p className='  rounded-3 bg-success-subtle px-3'>2022</p></div>
                                   <img className='d-flex mx-auto col-2' src={completed}></img>
                           </div>
@@ -71,9 +71,9 @@ const EducationSection = () => {
                       </div>
                       
                       </div>
-                      <div className='d-flex mb-2 mt-3 ' style={{position:'relative',zIndex:'0'}}>
+                      <div className='d-flex  mb-2 mt-3 ' style={{position:'relative',zIndex:'0'}}>
                       {educations.map((education) => (
-                          <div className='col-4 p-3'>
+                          <div className=' col-md-4 col-10 p-3'>
                           <div className='border border-secondary rounded-3 position-relative h-100'>
                                   <div style={{aspectRatio:'2/1',overflow:'hidden',position:'relative'}}>
                                       <img className=' rounded-top-3 w-100 ' style={{ objectFit: 'cover' }} src={education.thumbnail}></img>

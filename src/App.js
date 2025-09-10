@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div>
-      <div  className="col-2  d-flex justify-content-start  py-4 mt-4 position-fixed" >
+      <div  className="col-lg-2 d-none  d-lg-flex justify-content-start  py-4 mt-4 position-fixed" >
           <div style={{marginLeft:'35px',backgroundColor:'rgba(8, 67, 59, 1) '}} className='left-section-box col-6  py-5   border border-secondary rounded-3 px-3' >
           <div onClick={() => { handlescroll(aboutsection) }}  className='hover-size-increse '> 
                   <div className='d-flex justify-content-center'>

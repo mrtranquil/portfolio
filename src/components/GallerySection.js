@@ -19,15 +19,16 @@ const GallerySection = () => {
      
       <div  className='w-100 h-100  align-items-center justify-content-center ' style={{ position: 'fixed',zIndex:'1000',top:'0px',backgroundColor:'rgba(47, 47, 47, 0.62)',display:fullimg }}>
        
-        <div className='d-flex  justify-content-center h-100 px-5   position-relative'>
-          <div className='d-flex justify-content-end col-12' style={{position:'absolute'}} ><CancelIcon onClick={()=>{setfullimg('none')}} style={{color:'rgba(69, 69, 69, 1)'}}/></div>
-          <img className='' ref={imgurl}  >
-          </img></div>
+        <div className='d-flex  justify-content-center h-100    position-relative'>
+          <div className='d-flex justify-content-end h-100 col-12' style={{position:'absolute'}} ><CancelIcon onClick={()=>{setfullimg('none')}} style={{color:'rgba(69, 69, 69, 1)'}}/></div>
+          <div className='col-12 d-flex justify-content-center align-items-center'>
+            <img className='w-100 h-100 mt-5 mx-4' style={{objectFit:"contain",objectPosition:"center"}} ref={imgurl}  ></img>
+          </div></div>
   
 
       </div>
       <div className='d-flex justify-content-center bg-white'>
-              <div className='col-8'>
+              <div className='col-lg-8 col-11'>
                    <div className='d-flex  align-items-center mt-4  '>
                         <div style={{height:'70px',width:'4px',backgroundColor:'rgba(8, 67, 59, 1) '}}></div>
                       <h1 className='ms-3 text-success'>MY Gallery</h1>
@@ -35,9 +36,9 @@ const GallerySection = () => {
                   </div>
                   <hr className='mb-4 text-secondary'></hr>
 
-                  <div className='d-flex mb-2'>
+                  <div className='d-flex mb-2 overflow-auto'>
                       {gallery.map((image) => (
-                          <div className='col-4 p-3 ' style={{aspectRatio:'2/1'}}>
+                          <div className='col-md-4 col-sm-6 col-11 p-3 ' style={{aspectRatio:'2/1'}}>
                               <img onClick={(e)=>{showimage(e.target.src)}}  src={image.url} className='col-12 rounded-3' style={{objectFit:'cover'}}></img>
                                </div>
                       ))}
